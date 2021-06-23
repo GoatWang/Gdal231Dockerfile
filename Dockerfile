@@ -19,5 +19,4 @@ WORKDIR /
 
 # install gdal-python
 RUN pip3 install numpy==1.16.4
-RUN gdal_version=$(gdalinfo --version | sed "s/GDAL //" | sed "s/, released [0-9][0-9][0-9][0-9]\/[0-9][0-9]\/[0-9][0-9]//")
-RUN pip3 install GDAL==$gdal_version
+RUN pip3 install GDAL==$(gdalinfo --version | sed "s/GDAL //" | sed "s/, released [0-9][0-9][0-9][0-9]\/[0-9][0-9]\/[0-9][0-9]//")
