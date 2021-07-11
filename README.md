@@ -5,12 +5,12 @@
 
 2. Building Scripts
 ```
-sudo docker build -t gdal/python36:2.3.1 - < Dockerfile231
-sudo docker build -t gdal/python36:3.0.4 - < Dockerfile304
+sudo docker build -t jeremy4555/gdal:2.3.1 - < Dockerfile231
+sudo docker build -t jeremy4555/gdal:3.0.4 - < Dockerfile304
 ```
 
 3. Run
 ```
-sudo docker run -it --rm gdal/python36:2.3.1 /bin/bash
-sudo docker run -it --rm gdal/python36:3.0.4 /bin/bash
+sudo docker run -it --rm jeremy4555/gdal:2.3.1 /bin/bash
+sudo docker run -it --rm jeremy4555/gdal:3.0.4 /bin/bash
 ```
